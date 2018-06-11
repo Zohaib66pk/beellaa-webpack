@@ -15,6 +15,10 @@
               <div class="left label">Email:</div>
               <div class="left labelVal">{{email}}</div>
             </div>
+             <div class="infoWrap">
+              <div class="left label">Phone:</div>
+              <div class="left labelVal">{{phone}}</div>
+            </div>
             <div class="infoWrap">
               <div class="left label">First Name :</div>
               <div class="left labelVal">{{fname}}</div>
