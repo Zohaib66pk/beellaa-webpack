@@ -4,7 +4,7 @@
   
     <div class="contentPanel">
       <div class="titlePanel">
-        <div class="titleBar">Edit Profile</div>
+        <div class="titleBar">Profile</div>
       </div>
       <div class="loginWrap profileWrap">
   
