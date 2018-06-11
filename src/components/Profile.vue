@@ -36,8 +36,8 @@
               <div class="left labelVal">{{lat}}</div>
             </div>
             <div class="infoWrap">
-              <div class="left label">Language:</div>
-              <div class="left labelVal">{{lang}}</div>
+              <div class="left label">Longitude:</div>
+              <div class="left labelVal">{{lng}}</div>
             </div>
             <div class="input-field">
               <router-link to="editprofile" class="btn btnPrimary waves-effect waves-light">Edit profile</router-link>
@@ -68,7 +68,7 @@
         country: '',
         photourl: '',
         lat: '',
-        lang: '',
+        lng: '',
       }
     },
     mounted() {
@@ -106,7 +106,7 @@
             model.city = data.city
             model.country = data.country
             model.lat = data.lat
-            model.lang = data.lang
+            model.lng = data.lng
   
           } else {
   

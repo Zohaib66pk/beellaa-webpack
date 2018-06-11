@@ -193,7 +193,7 @@
           }
         }
   
-        let imageform = new FormData(this.image)
+        //let imageform = new FormData(this.image)
 
         
         let url = "user/update"
@@ -202,7 +202,7 @@
   
           user_id: userid,
           email: model.email,
-          photoURL: imageform,
+          //photoURL: imageform,
           first_name: model.fname,
           last_name: model.lname,
           phone: model.phone,
