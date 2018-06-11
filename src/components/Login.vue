@@ -8,11 +8,11 @@
           <div class="brandLogo"></div>
           <form action="#">
             <div class="input-field">
-              <input placeholder="email" v-on:keyup.enter="login" v-model="email" id="email" type="text" class="validate">
+              <input placeholder="Email" v-on:keyup.enter="login" v-model="email" id="email" type="text" class="validate">
               <div v-if="invalidemail" class="error">- Invalid input</div>
             </div>
             <div class="input-field">
-              <input placeholder="password" v-on:keyup.enter="login" v-model="password" id="pwd" type="password" class="validate">
+              <input placeholder="Password" v-on:keyup.enter="login" v-model="password" id="pwd" type="password" class="validate">
               <div v-if="invalidpwd" class="error">- Invalid input</div>
               <router-link v-if="false" to="forgotpassword" class="forgotPwd">Forgot?</router-link>
             </div>

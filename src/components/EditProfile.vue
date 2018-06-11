@@ -9,7 +9,8 @@
     <div class="loginWrap profileWrap">
   
       <div class="loginPanel">
-        <div class="userImage" v-bind:style="{ backgroundImage: 'url(' + image + ')' }"><a v-on:click="uploadfile" href="javascript:void(0);"><i class="right fa fa-pencil"></i></a></div>
+        <!--  v-bind:style="{ backgroundImage: 'url(' + image + ')' }" -->
+        <div class="userImage"><a v-on:click="uploadfile" href="javascript:void(0);"><i class="right fa fa-pencil"></i></a></div>
         <input type="file" ref="userimg" @change="fileselected" id="user-img" class="user-img" style="display:none;">
         <form action="#">
           <div class="input-field">
@@ -34,7 +35,7 @@
             <input placeholder="Lattitude" v-on:keyup.enter="updteprofile" v-model="lat" id="lat" type="text" class="validate">
           </div>
           <div class="input-field">
-            <input placeholder="Language" v-on:keyup.enter="updteprofile" v-model="lng" id="lng" type="text" class="validate">
+            <input placeholder="Longitude" v-on:keyup.enter="updteprofile" v-model="lng" id="lng" type="text" class="validate">
           </div>
           <div class="input-field">
             <a v-on:click="updteprofile" href="javascript:void(0);" class="btn btnPrimary waves-effect waves-light">{{action}}</a>
@@ -155,8 +156,8 @@
   
             data = data.data
             model.email = data.email
-            if(data.photoURL !== null) model.image = data.photoURL
-            else model.image = "../assets/images/favicon.png"
+            //if(data.photoURL !== null) model.image = data.photoURL
+            //else model.image = "../assets/images/favicon.png"
             model.fname = data.first_name
             model.lname = data.last_name
             model.phone = data.phone
